@@ -15,5 +15,5 @@ http.createServer(async(req,res)=>{const u=new URL(req.url,'http://x'),ip=req.he
  if(u.pathname==='/api/questions'){if(!ok(u.searchParams.get('token')))return J(401,{error:'Sem acesso'});return J(200,Q)}
  if(u.pathname==='/api/relay'&&req.method==='POST'){const m=await body(req);if(!ok(m.token))return J(401,{error:'Sessão inválida'});delete m.token;last[m.type]=m;const s='data: '+JSON.stringify(m)+'\n\n';clients.forEach(c=>c.write(s));return J(200,{})}
  if(u.pathname==='/api/events'){res.writeHead(200,{'Content-Type':'text/event-stream','Cache-Control':'no-cache','X-Accel-Buffering':'no'});clients.add(res);Object.values(last).forEach(m=>res.write('data: '+JSON.stringify(m)+'\n\n'));req.on('close',()=>clients.delete(res));return}
- if(['/','/palco','/controle'].includes(u.pathname)){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});return fs.createReadStream(path.join(D,'public','index.html')).pipe(res)}
+ if(['/','/palco','/controle'].includes(u.pathname)){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});return fs.createReadStream(path.join(D,'','index.html')).pipe(res)}
  res.writeHead(404);res.end()}).listen(PORT,'0.0.0.0',()=>console.log('Palco: /palco  Controle: /controle  (porta '+PORT+')'));
