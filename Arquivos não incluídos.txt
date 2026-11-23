@@ -1,0 +1,4 @@
+Arquivos não incluídos neste arquivo zip porque não foram encontrados:
+- outputs/quizshow-nuvem/public/audio/LEIA-ME.txt
+
+Para obter um arquivo desta lista, peça ao Claude que o crie novamente na conversa original.

@@ -1,7 +1,442 @@
 [
-{"tema":"Tabagismo","q":"Qual é a principal substância viciante do cigarro?","o":["Nicotina","Cafeína","Glicose","Clorofila"],"c":0},
-{"tema":"Sistema Solar","q":"Em qual fase da Lua vemos o disco totalmente iluminado?","o":["Nova","Crescente","Cheia","Minguante"],"c":2},
-{"tema":"Clima","q":"O fenômeno El Niño é caracterizado por:","o":["Resfriamento do Atlântico Norte","Aquecimento anormal das águas do Pacífico equatorial","Chuva de meteoros","Eclipse solar"],"c":1},
-{"tema":"Energia","q":"Qual destas é uma fonte de energia NÃO renovável?","o":["Solar","Eólica","Biomassa","Carvão mineral"],"c":3},
-{"tema":"Magnetismo","q":"Um eletroímã é um ímã produzido quando:","o":["Esquentamos um prego","Uma corrente elétrica passa por uma bobina","Esfregamos dois ímãs","Colocamos o ferro na água"],"c":1}
+{
+"tema": "Tabagismo",
+"q": "Qual é a principal substância viciante do cigarro?",
+"o": [
+"Nicotina",
+"Cafeína",
+"Glicose",
+"Clorofila"
+],
+"c": 0
+},
+{
+"tema": "Tabagismo",
+"q": "Qual órgão é afetado mais diretamente pela fumaça do cigarro?",
+"o": [
+"Rins",
+"Pulmões",
+"Ossos",
+"Olhos"
+],
+"c": 1
+},
+{
+"tema": "Tabagismo",
+"q": "O alcatrão presente no cigarro está relacionado ao risco de:",
+"o": [
+"Gripe",
+"Sarampo",
+"Câncer",
+"Anemia"
+],
+"c": 2
+},
+{
+"tema": "Tabagismo",
+"q": "A nicotina age principalmente no:",
+"o": [
+"Sistema ósseo",
+"Sistema digestório",
+"Sistema excretor",
+"Sistema nervoso"
+],
+"c": 3
+},
+{
+"tema": "Tabagismo",
+"q": "Qual atitude ajuda a prevenir o uso de drogas?",
+"o": [
+"Informação e diálogo",
+"Esconder o assunto",
+"Aceitar tudo",
+"Isolar o jovem"
+],
+"c": 0
+},
+{
+"tema": "Sistema Solar",
+"q": "Em qual fase da Lua vemos o disco totalmente iluminado?",
+"o": [
+"Nova",
+"Crescente",
+"Cheia",
+"Minguante"
+],
+"c": 2
+},
+{
+"tema": "Sistema Solar",
+"q": "Qual planeta é conhecido como planeta vermelho?",
+"o": [
+"Júpiter",
+"Marte",
+"Vênus",
+"Saturno"
+],
+"c": 1
+},
+{
+"tema": "Sistema Solar",
+"q": "A Terra leva cerca de quanto tempo para dar uma volta completa em torno do Sol?",
+"o": [
+"1 dia",
+"1 mês",
+"1 ano",
+"10 anos"
+],
+"c": 2
+},
+{
+"tema": "Sistema Solar",
+"q": "O movimento de rotação da Terra causa:",
+"o": [
+"As estações do ano",
+"O dia e a noite",
+"Os eclipses",
+"As marés altas"
+],
+"c": 1
+},
+{
+"tema": "Sistema Solar",
+"q": "Qual é o maior planeta do Sistema Solar?",
+"o": [
+"Terra",
+"Marte",
+"Saturno",
+"Júpiter"
+],
+"c": 3
+},
+{
+"tema": "Clima",
+"q": "O fenômeno El Niño é caracterizado por:",
+"o": [
+"Resfriamento do Atlântico Norte",
+"Aquecimento anormal das águas do Pacífico equatorial",
+"Chuva de meteoros",
+"Eclipse solar"
+],
+"c": 1
+},
+{
+"tema": "Clima",
+"q": "O oposto do El Niño, com resfriamento das águas do Pacífico, é:",
+"o": [
+"Monção",
+"La Niña",
+"Furacão",
+"Maré"
+],
+"c": 1
+},
+{
+"tema": "Clima",
+"q": "As estações do ano acontecem principalmente por causa:",
+"o": [
+"Da distância da Terra ao Sol",
+"Das fases da Lua",
+"Da inclinação do eixo da Terra",
+"Dos ventos solares"
+],
+"c": 2
+},
+{
+"tema": "Energia",
+"q": "Qual destas é uma fonte de energia NÃO renovável?",
+"o": [
+"Solar",
+"Eólica",
+"Biomassa",
+"Carvão mineral"
+],
+"c": 3
+},
+{
+"tema": "Energia",
+"q": "Qual é uma fonte de energia renovável?",
+"o": [
+"Petróleo",
+"Carvão mineral",
+"Eólica",
+"Gás natural"
+],
+"c": 2
+},
+{
+"tema": "Energia",
+"q": "A biomassa é energia obtida a partir de:",
+"o": [
+"Matéria orgânica",
+"Urânio",
+"Ventos fortes",
+"Calor do centro da Terra"
+],
+"c": 0
+},
+{
+"tema": "Energia",
+"q": "O petróleo é formado a partir de:",
+"o": [
+"Rochas vulcânicas recentes",
+"Restos de organismos soterrados por milhões de anos",
+"Água do mar evaporada",
+"Vento e sol"
+],
+"c": 1
+},
+{
+"tema": "Energia",
+"q": "A energia obtida da força das águas dos rios é a:",
+"o": [
+"Nuclear",
+"Solar",
+"Eólica",
+"Hidrelétrica"
+],
+"c": 3
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "A unidade de medida da corrente elétrica é o:",
+"o": [
+"Volt",
+"Ampère",
+"Ohm",
+"Watt"
+],
+"c": 1
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "Materiais que permitem a passagem da corrente elétrica são:",
+"o": [
+"Condutores",
+"Isolantes",
+"Magnéticos",
+"Opacos"
+],
+"c": 0
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "Um eletroímã é um ímã produzido quando:",
+"o": [
+"Esquentamos um prego",
+"Uma corrente elétrica passa por uma bobina",
+"Esfregamos dois ímãs",
+"Colocamos o ferro na água"
+],
+"c": 1
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "Os polos de um ímã são chamados de:",
+"o": [
+"Positivo e negativo",
+"Quente e frio",
+"Norte e sul",
+"Claro e escuro"
+],
+"c": 2
+},
+{
+"tema": "Tabagismo",
+"q": "O monóxido de carbono do cigarro prejudica o corpo porque:",
+"o": [
+"Dificulta o transporte de oxigênio pelo sangue",
+"Aumenta a vitamina C",
+"Fortalece os ossos",
+"Melhora a respiração"
+],
+"c": 0
+},
+{
+"tema": "Tabagismo",
+"q": "Qual destas doenças pode ser causada ou agravada pelo tabagismo?",
+"o": [
+"Enfisema pulmonar",
+"Catapora",
+"Conjuntivite",
+"Caxumba"
+],
+"c": 0
+},
+{
+"tema": "Tabagismo",
+"q": "Por que parar de fumar traz benefícios à saúde?",
+"o": [
+"A nicotina aumenta",
+"Os pulmões deixam de funcionar",
+"O organismo começa a se recuperar dos danos",
+"O corpo fica mais dependente"
+],
+"c": 2
+},
+{
+"tema": "Sistema Solar",
+"q": "Qual planeta possui anéis bem visíveis?",
+"o": [
+"Mercúrio",
+"Saturno",
+"Marte",
+"Vênus"
+],
+"c": 1
+},
+{
+"tema": "Sistema Solar",
+"q": "O Sol é:",
+"o": [
+"Um planeta",
+"Um satélite natural",
+"Uma estrela",
+"Um cometa"
+],
+"c": 2
+},
+{
+"tema": "Sistema Solar",
+"q": "Qual é o satélite natural da Terra?",
+"o": [
+"Fobos",
+"Lua",
+"Europa",
+"Titã"
+],
+"c": 1
+},
+{
+"tema": "Clima",
+"q": "O efeito estufa em excesso contribui para:",
+"o": [
+"O resfriamento do planeta",
+"O aquecimento global",
+"A diminuição do gás carbônico",
+"O aumento da camada de ozônio"
+],
+"c": 1
+},
+{
+"tema": "Clima",
+"q": "Qual gás é um dos principais responsáveis pelo aumento do efeito estufa?",
+"o": [
+"Dióxido de carbono",
+"Hélio",
+"Nitrogênio",
+"Argônio"
+],
+"c": 0
+},
+{
+"tema": "Clima",
+"q": "A camada de ozônio protege a Terra principalmente:",
+"o": [
+"Dos ventos fortes",
+"Dos raios ultravioleta do Sol",
+"Das chuvas ácidas",
+"Dos terremotos"
+],
+"c": 1
+},
+{
+"tema": "Clima",
+"q": "A diferença entre tempo e clima é que o clima:",
+"o": [
+"Muda de hora em hora",
+"Descreve o padrão do tempo em longo prazo",
+"Só existe no verão",
+"Só vale para o mar"
+],
+"c": 1
+},
+{
+"tema": "Energia",
+"q": "Qual usina transforma a energia dos ventos em eletricidade?",
+"o": [
+"Termelétrica",
+"Hidrelétrica",
+"Eólica",
+"Nuclear"
+],
+"c": 2
+},
+{
+"tema": "Energia",
+"q": "A queima de combustíveis fósseis libera principalmente:",
+"o": [
+"Oxigênio puro",
+"Dióxido de carbono",
+"Hélio",
+"Água doce"
+],
+"c": 1
+},
+{
+"tema": "Energia",
+"q": "A energia solar pode ser captada por:",
+"o": [
+"Turbinas a vapor",
+"Painéis fotovoltaicos",
+"Poços de petróleo",
+"Minas de carvão"
+],
+"c": 1
+},
+{
+"tema": "Energia",
+"q": "O etanol, usado como combustível no Brasil, é obtido principalmente da:",
+"o": [
+"Cana-de-açúcar",
+"Areia",
+"Carvão",
+"Água do mar"
+],
+"c": 0
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "A unidade de medida da tensão elétrica é o:",
+"o": [
+"Ampère",
+"Watt",
+"Volt",
+"Ohm"
+],
+"c": 2
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "Qual material é um bom isolante elétrico?",
+"o": [
+"Cobre",
+"Borracha",
+"Ferro",
+"Alumínio"
+],
+"c": 1
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "A Terra se comporta como:",
+"o": [
+"Um grande ímã",
+"Uma lâmpada",
+"Uma pilha",
+"Um fio de cobre"
+],
+"c": 0
+},
+{
+"tema": "Eletricidade e magnetismo",
+"q": "Qual aparelho usa um eletroímã em seu funcionamento?",
+"o": [
+"Campainha elétrica",
+"Régua",
+"Caderno",
+"Colher"
+],
+"c": 0
+}
 ]
