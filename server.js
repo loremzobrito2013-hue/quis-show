@@ -5,6 +5,7 @@ const H=p=>crypto.scryptSync(String(p),SALT,32);
 let PASS=H(process.env.QUIZ_PASS||'1234');
 const Q=JSON.parse(fs.readFileSync(path.join(D,'questions.json')));
 const F=(...p)=>{for(const b of [D,path.join(D,'public')]){const f=path.join(b,...p);if(fs.existsSync(f))return f}return null};
+let SNAP='';
 const sessions=new Map(),tries=new Map(),clients=new Set(),last={};
 const ok=t=>{const e=sessions.get(t);if(e&&e>Date.now()){sessions.set(t,Date.now()+6*36e5);return true}sessions.delete(t);return false};
 const body=r=>new Promise(res=>{let b='';r.on('data',d=>{b+=d;if(b.length>2e5)r.destroy()});r.on('end',()=>{try{res(JSON.parse(b))}catch{res({})}})});
@@ -17,6 +18,7 @@ http.createServer(async(req,res)=>{const u=new URL(req.url,'http://x'),ip=req.he
  if(u.pathname==='/api/relay'&&req.method==='POST'){const m=await body(req);if(!ok(m.token))return J(401,{error:'Sessão inválida'});delete m.token;last[m.type]=m;const s='data: '+JSON.stringify(m)+'\n\n';clients.forEach(c=>c.write(s));return J(200,{})}
  if(u.pathname==='/api/events'){res.writeHead(200,{'Content-Type':'text/event-stream','Cache-Control':'no-cache','X-Accel-Buffering':'no'});clients.add(res);Object.values(last).forEach(m=>res.write('data: '+JSON.stringify(m)+'\n\n'));req.on('close',()=>clients.delete(res));return}
  if(['/','/palco','/controle'].includes(u.pathname)){res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});const ix=F('index.html');if(!ix){res.end('index.html não encontrado');return}return fs.createReadStream(ix).pipe(res)}
+ if(u.pathname==='/api/snap'){if(req.method==='POST'){const m=await body(req);if(typeof m.img==='string'&&m.img.length<150000)SNAP=m.img;return J(200,{})}if(!ok(u.searchParams.get('token')))return J(401,{error:'Sem acesso'});return J(200,{img:SNAP})}
  if(u.pathname==='/api/audio'){if(!ok(u.searchParams.get('token')))return J(401,{error:'Sem acesso'});let f=[];try{f=[...new Set([D,path.join(D,'public')].flatMap(b=>{try{return fs.readdirSync(path.join(b,'audio'))}catch{return []}}))].filter(x=>/\.(mp3|wav|ogg|m4a)$/i.test(x)).sort((a,b)=>a.localeCompare(b,'pt'))}catch{}return J(200,f)}
  if(u.pathname.startsWith('/audio/')){const n=path.basename(decodeURIComponent(u.pathname.slice(7))),p=F('audio',n);if(!p){res.writeHead(404);return res.end()}const mt={'.mp3':'audio/mpeg','.wav':'audio/wav','.ogg':'audio/ogg','.m4a':'audio/mp4'}[path.extname(n).toLowerCase()]||'application/octet-stream';res.writeHead(200,{'Content-Type':mt});return fs.createReadStream(p).pipe(res)}
  res.writeHead(404);res.end()}).listen(PORT,'0.0.0.0',()=>console.log('Palco: /palco  Controle: /controle  (porta '+PORT+')'));
